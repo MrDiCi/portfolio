@@ -1,0 +1,250 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #736e65;
+  line-height: 1.7;
+  box-sizing: border-box;
+  }
+
+section {
+  padding: 4rem 0; }
+  section.section-statement {
+    position: relative; }
+
+.mission {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #171215; }
+
+.worm {
+  position: absolute;
+  top: 5%;
+  left: 5%; }
+
+.triangle {
+  position: absolute;
+  top: 10%;
+  right: 10%; }
+
+.highlight-text::after {
+  background: url(/img/highlight-text.png) no-repeat;
+  content: " ";
+  position: absolute;
+  width: 30rem;
+  height: 5rem;
+  background-position: center;
+  background-size: contain;
+  transform: translateX(-25rem);
+  z-index: -1; }
+
+.section-projects {
+  overflow: hidden; }
+  .section-projects .project-preview.left {
+    transform: translateX(-8rem); }
+
+.project-details {
+  margin-top: 15rem; }
+
+.project-tools {
+  margin: 3rem 0; }
+  .project-tools::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+.tool-icon {
+  width: 3.5rem;
+  height: 3rem;
+  float: left;
+  margin-right: 1.5rem; }
+
+.project-description {
+  width: 75%;
+  margin: 4rem 0; }
+
+.thumbnail {
+  width: 60rem; }
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.35rem;
+  letter-spacing: 0.5px;
+  padding: 1rem 3.5rem; }
+
+.btn-ghost {
+  color: #736e65;
+  border: 2px solid #cac9ca;
+  box-shadow: 5px 5px 0px -1px #efeeef; }
+
+.btn-cta {
+  background-color: #15b5df;
+  color: #fff;
+  border: 2px solid #15b5df;
+  box-shadow: 0px 8px 20px 5px rgba(21, 181, 223, 0.6);
+  margin-right: 5rem; }
+
+.btn-project:link,
+.btn-project:visited {
+  color: #171215;
+  background: #efeeef;
+  border: 2px solid #cac9ca;
+  box-shadow: 5px 5px 0px -2px #efeeef;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  margin-top: 3rem; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  }
+  .row:not(:last-child) {
+    margin-bottom: 5rem; }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 1rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 1rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 1rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(
+ 2 * ((100% - 2 * 1rem) / 3) + 1rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 1rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(
+ 2 * ((100% - 3 * 1rem) / 4) + 1rem); }
+  .row .col-3-of-4 {
+    width: calc(
+ 3 * ((100% - 3 * 1rem) / 4) + (2 * 1rem)); }
+
+h1,
+h2 {
+  color: #171215;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 1.3; }
+
+h1.primary {
+  font-size: 4.9rem;
+  }
+
+h1 span.italic {
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: italic;
+  display: block;
+  }
+
+h2.project-name {
+  font-size: 3.4rem; }
+
+.header {
+  margin-top: 5rem;
+  position: relative;
+  overflow: hidden; }
+  .header::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+.logo {
+  height: 3.5rem;
+  width: auto;
+  float: left;
+  }
+
+.navigation {
+  float: right;
+  z-index: 1;
+  position: relative; }
+  .navigation .menu {
+    height: 1.5rem;
+    width: auto; }
+
+.intro-box {
+  margin-top: 15rem;
+  }
+  .intro-box::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .intro-box .intro-text {
+    width: 85%;
+    margin: 6rem 0 6.5rem 0;
+    }
+  .intro-box span.bold {
+    font-weight: 700; }
+
+/*
+ 
+.hamburger {
+  margin-top: 50px;
+  margin-left: 50px;
+
+  span {
+    background-color: $color-black;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 6px;
+    transition: 0.3s all ease;
+    height: 2px;
+    width: 30px;
+
+    &:nth-child(1) {
+      width: 25px;
+    }
+    &:nth-child(2) {
+      width: 20px;
+    }
+    &:nth-child(3) {
+      width: 25px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    & span:nth-child(3) {
+      width: 25px;
+    }
+
+    & span:nth-child(2) {
+      width: 30px;
+    }
+
+    & span:nth-child(1) {
+      width: 20px;
+    }
+  }
+}
+
+*/
+.tiles {
+  height: auto;
+  width: 75rem;
+  transform: translate(9rem, -5rem);
+  }
+
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
